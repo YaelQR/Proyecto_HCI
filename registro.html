@@ -4,38 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="stylesheet" href="/archivosCSS/login.css">
+    <script src="/javascript/tamanio.js"></script>
 </head>
-<body>
+<body onload="size()">
     
-    <div class="main"> 
+    <div class="main" id="main"> 
 
         <div class="contenedor">
             
-            <figure class="logo"><img src="" alt=""></figure>
-            <h1 class="titulo1">Bienvenido</h1>
+            <figure class="logo"><img src="/imagenes/logo.png" alt=""></figure>
+            <h1 class="titulo1">Registro</h1>
 
             <form action="" class="form">
 
                 <div class="campo"> 
-                    <figure class="figura"><img src="" alt=""></figure>
-                    <input type="text" class="entrada" name="username">
+                    <label for="">Nombre Completo</label>
+                    <input type="text" class="entrada" name="nombreC" value="">
                 </div>
 
                 <div class="campo"> 
-                    <figure class="figura"><img src="" alt=""></figure>
-                    <input type="text" class="entrada" name="password">
+                    <label for="">Usuario</label>
+                    <input type="text" class="entrada" name="username" value="">
                 </div>
 
-                <div class="enlace">Olvide mi contraseña</div>
+                <div class="campo"> 
+                    <label for="">Correo Electronico</label>
+                    <input type="text" class="entrada" name="correo" value="">
+                </div>
 
-                <input type="button" value="Iniciar Sesión">
+                <div class="campo"> 
+                    <label for="">Contraseña</label>
+                    <input type="text" class="entrada" name="password" value="">
+                </div>
+
+
+                <input type="button" value="Registrarse" class="button">
 
             </form>
 
             <div class="textos">
 
-                <p>¿No tienes cuenta?</p>
-                <p class="enlace enlace2">Crear Cuenta</p>
+                <p>Ya tengo una cuenta <a href="/login.html" class="enlace">Iniciar sesión</a></p>
+                
 
             </div>
             
