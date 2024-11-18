@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="/archivosCSS/login.css">
+    <script src="/javascript/tamanio.js"></script>
 </head>
-<body>
+<body onload="size()">
     
-    <div class="main"> 
+    <div class="main" id="main"> 
 
-        <div class="contenedor">
+        <div class="contenedor" >
             
-            <figure class="logo"><img src="" alt=""></figure>
+            <figure class="logo"><img src="/imagenes/logo.png" alt=""></figure>
             <h1 class="titulo1">Bienvenido</h1>
 
             <form action="" class="form">
 
-                <div class="campo"> 
-                    <figure class="figura"><img src="" alt=""></figure>
-                    <input type="text" class="entrada" name="username">
+                <div class="campo">
+                    <label for="">Usuario</label> 
+                    <div class="campoL">
+                        <figure class="figura"><img src="/imagenes/user.png" alt="" class="figura"></figure>
+                        <input type="text" class="entrada" name="username">
+                    </div>
                 </div>
 
-                <div class="campo"> 
+                <div class="campo campoL"> 
                     <figure class="figura"><img src="" alt=""></figure>
                     <input type="text" class="entrada" name="password">
                 </div>
