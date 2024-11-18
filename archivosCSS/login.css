@@ -136,3 +136,7 @@ a{
 div.textos{
     margin-bottom: 20px;
 }
+
+h1.titulo{
+    font-size: 10vw;
+}
