@@ -45,7 +45,7 @@ form.form{
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -62,18 +62,22 @@ div.campo{
 div.campoL{
     display: flex;
     flex-direction: row;
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: #004E89;
+
+    justify-content: space-between;
+    align-items: center;
 }
 
 input.entrada{
     width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-
-    font-size: 5vw;
+    height: 40%;
     
-    border-style: solid;
-    border-width: 0px 0px 4px 0px;
-    border-color: #004E89;
+    border-width: 0px;
+    font-size: 8vw;
+    
+    
 
 }
 
@@ -83,7 +87,6 @@ input.button{
     font-size: 5vw;
     background-color: #004E89;
     color: white;
-
 }
 
 label{
@@ -96,6 +99,40 @@ a{
 
 
 img.figura{
-    width: 20vw;
+    width: 15vw;
     height: auto;
+    margin: 0px;
+}
+
+figure.figura{
+    margin: 0px 10px 5px 0px;
+
+}
+
+label{
+    font-size: 8vw;
+    margin: 0px 0px 5px 0px;
+}
+
+div.clases{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+p{
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+}
+
+a{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+
+div.textos{
+    margin-bottom: 20px;
 }
