@@ -7,24 +7,28 @@
     <script src="/javascript/tamanio.js"></script>
     <link rel="stylesheet" href="/archivosCSS/publicacion.css">
     <link rel="stylesheet" href="/archivosCSS/nav.css">
+    <link rel="stylesheet" href="/archivosCSS/header.css">
+    <link rel="stylesheet" href="/archivosCSS/menuInf.css">
 </head>
-<body onload="size()">
+<body onload="size()" id="body">
     
-    <div class="main">
+    <div class="main" id="main">
 
-        <nav>
-            <figure><img src="/imagenes/menu.png" alt="" class="menu"></figure>
-            <span class="tituloM">Post</span>
-            <div class="cajaN">
-                <figure><img src="/imagenes/lupa.png" alt="" class="menu"></figure>
-                <figure><img src="/imagenes/logo.png" alt="" class="logo"></figure>
+        <header class="header">
+            <button class="menu-button">☰&nbsp;&nbsp;&nbsp;</button>
+            <span class="tituloM">PoliShare</span>
+            <!--<h1>PoliShare</h1>-->
+            <div class="cajaN"></div>
+            <!--<div class="header-icons">-->
+                <img src="img/lupa.png" alt="Search" class="menu">
+                <img src="img/polishare-logo.png" alt="PoliShare Logo" class="logo">
             </div>
-        </nav>
+        </header>
 
         <div>
 
             <div class="cajaUsuario">
-                <figure class="fotoUser"><img src="/imagenes/user.png" alt="" class="user"></figure>
+                <figure class="fotoUser"><img src="/img/user.png" alt="" class="user"></figure>
                 <div class="nombres">
                     <span class="nombre">Enrique HC</span>
                     <span class="tiempo">Hace una hora</span>
@@ -41,7 +45,7 @@
                 </div>
                 <div class="materiales">
                     <div class="material">
-                        <figure class="material"><img src="/imagenes/pdf.png" alt="" class="material"></figure>
+                        <figure class="material"><img src="/img/pdf.png" alt="" class="material"></figure>
                         <h3 class="tituloMaterial">Mates Discretas_Grimaldi_Edicion2012.pdf</h3>
                     </div>
                 </div>
@@ -56,7 +60,7 @@
                 <div class="comentario">
                     <div class="user">
                         <div class="fotoUserC">
-                            <figure class="userC"><img src="/imagenes/user.png" alt="" class="user"></figure>
+                            <figure class="userC"><img src="/img/user.png" alt="" class="user"></figure>
                         </div>
                         <div class="informacionUser">
                             <span>Benito Cabrera</span>
