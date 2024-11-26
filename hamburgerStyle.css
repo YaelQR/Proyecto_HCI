@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hamburger {
+    position: fixed;
+    background-color: transparent;
+    left: 20px;
+    top: 20px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    z-index: 1002;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  ._layer {
+    background: #333333;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    width: 28px;
+    height: 4px;
+    opacity: 1;
+    transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  }
+  
+  .hamburger.is-active .-top {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .hamburger.is-active .-mid {
+    opacity: 0;
+  }
+  
+  .hamburger.is-active .-bottom {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hamburger {
+    position: fixed;
+    background-color: transparent;
+    left: 10px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    padding: 20px 20px;
+    z-index: 1002;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamburger ._layer {
+    background: #333;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    width: 28px;
+    height: 4px;
+}
+
+.menuppal {
+    background-color:#004E89 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Ajusta el ancho del menú lateral */
+    height: 100%; /* Asegura que la altura del menú sea el 100% de la pantalla */
+    transform: translateX(-100%); /* Lo mantiene oculto inicialmente */
+    transition: transform 0.35s ease; /* Suaviza la animación */
+    z-index: 1001;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+}
+
+.menuppal.is_active {
+    transform: translateX(0); /* Muestra el menú al hacer clic en el botón */
+}
+
+.menuppal ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Distribuye los ítems de arriba hacia abajo */
+    height: 100%; /* Hace que la lista ocupe todo el espacio disponible */
+    overflow-y: auto; /* Añade scroll si la lista es demasiado larga */
+}
+
+.menuppal ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 100%; /* Hace que el área del enlace cubra todo el ítem */
+}
+
+.menuppal ul li a:hover {
+    color: #ddd;
+}
+
+
+  .icon {
+    width: 20px;
+    height: 20%;
+    background: #ECF1FD;
+  }
+
+  .pen{
+    width: 35px;
+    height: 40px;
+    color:#369;
+  }
+
+  .setting{
+    width: 35px;
+    height: 40px;
+    color:#369;    
+  }
