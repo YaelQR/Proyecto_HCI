@@ -1,0 +1,10 @@
+function size(){
+
+    var div=document.getElementById('body');
+    //div.style.height = window.innerHeight+'px';
+    div.style.width = window.innerWidth+'px';
+    
+    var div=document.getElementById('main');
+    div.style.height=window.innerHeight+'px';
+
+}
