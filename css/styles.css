@@ -1,0 +1,309 @@
+
+
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 250px;
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007ACC;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+header .close-btn,
+header .publish-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header .publish-btn {
+    font-weight: bold;
+}
+
+/* Post Container */
+.post-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-info .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Textarea */
+.post-text {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    resize: none;
+    font-size: 14px;
+}
+
+/* Tags */
+.tags-container label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background-color: #007ACC;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tag button.remove-tag {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button.add-tag {
+    background-color: #007ACC;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Add Resource Button */
+.add-resource {
+    display: block;
+    width: 100%;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.file-icon {
+    width: 20px; /* Tamaño pequeño de la imagen */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.file-title {
+    font-size: 11px;
+    padding: 2px 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions .action-btn {
+    background-color: #eee;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.actions .action-btn:hover {
+    background-color: #ddd;
+}
+header{
+    background-color: #004E89 ;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+#menuIcons{
+    background-color: transparent ;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+      rgba(27, 133, 219, 0.5) 5px 10px 15px;
+    
+}
+#buscar{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px; /* Para que el fondo sea redondo */
+    cursor: pointer;
+}
+#lupa{
+    color: white; /* Define el color de la lupa */
+    transition: transform 0.3s ease;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    width: 35px;
+    height: 35px;
+}
+.button_header{
+    background-color: #004E89;
+    outline: 0 !important;
+    border: 0 !important;
+    padding: 0px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+.button_header:hover {
+    transform: scale(1.1);
+  }
+
+  #titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+    color: #fff;
+    width: 110px;
+  }
+  
+
+
+/* Botón Publicar */
+.publish-btn {
+    background-color: #007ACC; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 5px 15px; /* Espaciado interno */
+    font-size: 8pt; /* Tamaño del texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none; /* Sin bordes */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex; /* Asegura alineación */
+    align-items: center;
+    justify-content: center;
+    height: 35px; /* Altura fija */
+    width: auto; /* Ajuste automático al contenido */
+}
+
+/* Hover en el botón */
+.publish-btn:hover {
+    background-color: #005F99; /* Color más oscuro */
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+/* Ajuste para que no desborde el contenedor */
+#menuIcons {
+    justify-content: space-between;
+}
+
+.button_header {
+    min-width: 35px;
+    max-width: auto;
+}
+/* Barra de abajo ---------------------------------------*/ 
+.button-container {
+    display: flex;
+    background-color: rgb(27, 133, 219);
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+      rgba(27, 133, 219, 0.5) 5px 10px 15px;
+  }
+  
+  .button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
