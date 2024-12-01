@@ -1,0 +1,336 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 250px;
+}
+
+/*Barra del encabezado*/
+header{
+    background-color: #004E89 ;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+#menuIcons{
+    background-color: transparent ;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+      rgba(27, 133, 219, 0.5) 5px 10px 15px;
+    
+}
+#buscar{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px; /* Para que el fondo sea redondo */
+    cursor: pointer;
+}
+#lupa{
+    color: white; /* Define el color de la lupa */
+    transition: transform 0.3s ease;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    width: 35px;
+    height: 35px;
+}
+.button_header{
+    background-color: #004E89;
+    outline: 0 !important;
+    border: 0 !important;
+    padding: 0px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+.button_header:hover {
+    transform: scale(1.1);
+  }
+
+  #titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+    color: #fff;
+    width: 110px;
+  }
+/*Barra de busqueda*/
+.busqueda{
+    background-color:rgb(27, 133, 219) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    height: 30px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .search__input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8pt;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    width: 15em;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+  }
+  
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  
+  .search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+  }
+  
+  .search__button:hover {
+    cursor: pointer;
+  }
+  
+  .search__icon {
+    height: 1.3em;
+    width: 1em;
+    fill: #b4b4b4;
+  }
+
+/*Contenido*/
+.seccion{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boton_opciones{
+    background-color: #004E89;
+    border: none;
+    color: #f0eeee;
+    width: 110px;
+    height: 100px;
+    font-size: 8pt;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.boton_opciones:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.botones_secciones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+/* Barra de abajo */ 
+.button-container {
+    display: flex;
+    background-color: rgb(27, 133, 219);
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+      rgba(27, 133, 219, 0.5) 5px 10px 15px;
+  }
+  
+  .button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+
+
+  /*PAGINA DE PERFIL DE PROFESOR*/
+
+
+  .seccion_perfil_profesor{
+    font-size: 10px;
+    border-bottom: #646464 solid 1px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+  }
+
+  .seccionPP1{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .infoPersonal{
+    width: 60%;
+  }
+  .fotoPerfil{
+    width: 90px;
+    height: 90px;
+  }
+
+  .etiqueta {
+    background: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    font-size: 4pt;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #1A659E ;
+    border-radius: 25px;
+    overflow: hidden;
+    color: #1A659E ;
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    height: 20px;
+    margin-bottom: 4px;
+  }
+  
+  .etiqueta span {
+    margin: 10px;
+  }
+  
+  .etiqueta::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  .etiqueta:hover {
+    color: #fff;
+    border: 2px #1A659E;
+  }
+  
+  .etiqueta:hover::before {
+    box-shadow: inset 0 0 0 10em #1A659E;
+  }
+
+  .botones_etiquetas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .reseña{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .usuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  /*Estrellas de opiniones*/
+
+  .rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 10px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }

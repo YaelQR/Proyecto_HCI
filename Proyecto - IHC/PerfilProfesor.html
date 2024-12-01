@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de profesor</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!--Barra de encabezado-->
+    <header name="encabezado">
+        <div id="menuIcons">
+            <button class="button_header">
+                <svg
+                    class="icon"
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"></path>
+                </svg>
+            </button>
+                
+            <button class="button_header" id="titulo">
+                <h2 >Profesor</h2>
+            </button>
+
+            <button class="button_header" id="buscar">
+                <svg
+                class="icon"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="11" cy="11" r="8" stroke="currentColor" id="lupa"></circle>
+                <line x1="16" y1="16" x2="22" y2="22" stroke="currentColor" stroke-linecap="round" id="lupa"></line>
+              </svg>
+            </button>
+
+            <button class="button_header">
+                <img src="images/logo.png" alt="PoliShare" class="logo">
+            </button>
+        </div>
+    </header>
+
+    <!--Secciones de la pagina-->
+    <!--Informacion principal-->
+    <section class="seccion_perfil_profesor">
+        <div class="seccionPP1">
+            <div class="fotoPerfil">
+                <img src="images/perfil.png" alt="Foto de perfil">
+            </div>
+            <div class="infoPersonal">
+                <h1>Ulises Torres</h1>
+                <h3>Profesor de tiempo completo </h3>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccione de etiquetas-->
+    <section class="seccion_perfil_profesor">
+        <div>
+            <h1>Etiquetas relacionadas</h1>
+        </div>
+        <div class="botones_etiquetas">
+            <button class="etiqueta">
+                <svg 
+                    viewBox="0 0 16 16" class="bi bi-instagram" 
+                    fill="currentColor" height="16" 
+                    width="16" xmlns="http://www.w3.org/2000/svg">
+                    <path 
+                        d="M12 5v6m3-3H9" stroke="currentColor" 
+                        stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" fill="none"/>
+                </svg>
+                  <span>Programación</span>
+            </button>
+            <button class="etiqueta">
+                <svg 
+                    viewBox="0 0 16 16" class="bi bi-instagram" 
+                    fill="currentColor" height="16" 
+                    width="16" xmlns="http://www.w3.org/2000/svg">
+                    <path 
+                        d="M12 5v6m3-3H9" stroke="currentColor" 
+                        stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" fill="none"/>
+                </svg>
+                  <span>Sistemas operativos</span>
+            </button>   
+            <button class="etiqueta">
+                <svg 
+                    viewBox="0 0 16 16" class="bi bi-instagram" 
+                    fill="currentColor" height="16" 
+                    width="16" xmlns="http://www.w3.org/2000/svg">
+                    <path 
+                        d="M12 5v6m3-3H9" stroke="currentColor" 
+                        stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" fill="none"/>
+                </svg>
+                  <span>ITI</span>
+            </button>             
+            <button class="etiqueta">
+                <svg 
+                    viewBox="0 0 16 16" class="bi bi-instagram" 
+                    fill="currentColor" height="16" 
+                    width="16" xmlns="http://www.w3.org/2000/svg">
+                    <path 
+                        d="M12 5v6m3-3H9" stroke="currentColor" 
+                        stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" fill="none"/>
+                </svg>
+                  <span>ITEM</span>
+            </button> 
+            <button class="etiqueta" id="agregarNuevaEtiqiueta">
+                <svg 
+                    viewBox="0 0 16 16" class="bi bi-instagram" 
+                    fill="currentColor" height="16" 
+                    width="16" xmlns="http://www.w3.org/2000/svg">
+                    <path 
+                        d="M12 5v6m3-3H9" stroke="currentColor" 
+                        stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" fill="none"/>
+                </svg>
+                  <span>Agregar etiqueta</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="seccion_perfil_profesor">
+        <div>
+            <h1>Puntuaciones y reseñas</h1>
+        </div>
+        
+        <div class="reseña">
+            <div class="usuario">
+                <div style="width: 40px; height: 40px;"> <img src="images/perfil.png" alt=""></div>
+                <div style="margin-left: 20px;">
+                    <h4>Anónimo</h4>
+                    <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                    </div>
+                    <span>20/09/2024</span>
+                </div>
+            </div>
+            <div class="comentario" style="font-size: 6pt; text-align: justify;">
+                <p>Muy buen profesor, te comparte todos los libros de donde saca la información de sus clases, 
+                    al igual que las diapositivas que presenta en las clases, y siempre es muy flexible 
+                    con las entregas de los trabajos 
+                </p>
+            </div>
+        </div>
+
+        <div class="reseña">
+            <div class="usuario">
+                <div style="width: 40px; height: 40px;"> <img src="images/perfil.png" alt=""></div>
+                <div style="margin-left: 20px;">
+                    <h4>Juanito Alcachofa</h4>
+                    <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                    </div>
+                    <span>20/09/2024</span>
+                </div>
+            </div>
+            <div class="comentario" style="font-size: 6pt; text-align: justify;">
+                <p>Me parece que es buen profesor, sin embargo, recomiendo que siempre pongan 
+                    mucha atención a sus clases, ya que muchas veces menciona en clase algunos
+                    conceptos de examen 
+                </p>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <!-- Barra de abajo -->
+    <div class="button-container">
+        <!-- Casilla -->
+        <button class="button">
+          <svg
+            class="icon"
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 1024 1024"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"
+            ></path>
+          </svg>
+        </button>
+  
+        <!-- Tiendita -->
+        <button class="button">
+          <svg
+            class="icon"
+            stroke="currentColor"
+            fill="none"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path
+              d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+            ></path>
+          </svg>
+        </button>  
+  
+        <!-- Mas -->
+        <button class="button">
+          <svg
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          fill="none"
+          class="h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+              <path
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+              ></path>
+          </svg>
+        </button>
+  
+        <!-- Mensajes -->
+        <button class="button">
+          <svg
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            height="44"
+            width="44"
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-8 hover:scale-125 duration-200 hover:stroke-blue-500"
+            fill="none"
+          >
+            <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
+            <path d="M8 9h8"></path>
+            <path d="M8 13h6"></path>
+            <path
+              d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"
+            ></path>
+          </svg>
+        </button>
+      
+        <!-- Campanita -->
+        <button class="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path
+              fill="currentColor"
+              d="M20 17h2v2H2v-2h2v-7a8 8 0 1 1 16 0v7zm-2 0v-7a6 6 0 1 0-12 0v7h12zm-9 4h6v2H9v-2z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+</body>
+</html>
