@@ -1,0 +1,143 @@
+div.main{
+    background-color: #004E89;
+    background: #004E89;
+    
+    height: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+
+figure.logo{
+    margin: 0px;
+    width: 50%;
+    height: auto;
+    margin-top: -50px;
+    
+}
+
+div.contenedor{
+    background: white;
+    height: 85%;
+    width: 95%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+body{
+    background-color: #004E89;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 420px;
+}
+
+form.form{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1.titulo1{
+    margin-bottom: 10px;
+}
+
+div.campo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.campoL{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: #004E89;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+input.entrada{
+    width: 100%;
+    height: 40%;
+    
+    border-width: 0px;
+    font-size: 8vw;
+    
+    
+
+}
+
+input.button{
+    width: 80%;
+    height: 10%;
+    font-size: 5vw;
+    background-color: #004E89;
+    color: white;
+}
+
+label{
+    font-size: 5vw;
+}
+
+a{
+    color: black;
+}
+
+
+img.figura{
+    width: 15vw;
+    height: auto;
+    margin: 0px;
+}
+
+figure.figura{
+    margin: 0px 10px 5px 0px;
+
+}
+
+label{
+    font-size: 8vw;
+    margin: 0px 0px 5px 0px;
+}
+
+div.clases{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+p{
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+}
+
+a{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+
+div.textos{
+    margin-bottom: 20px;
+}
+
+h1.titulo{
+    font-size: 10vw;
+}

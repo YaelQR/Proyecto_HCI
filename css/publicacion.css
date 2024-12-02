@@ -1,0 +1,161 @@
+body{
+    background: white;
+    max-width: 415px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+div.cajaUsuario{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 75px;
+    padding-bottom: 20px;
+    border-bottom: black solid 1px;
+}
+
+div.user{
+    display: flex;
+    flex-direction: column;
+}
+
+div.nombres{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    margin-left: 20px;
+}
+
+span{
+    margin: 5px 0px;
+}
+
+figure.fotoUser{
+    height: 100%;
+    width: auto;
+    margin-left: 40px;
+    margin: 0px 0px 0px 40px;
+}
+
+img.user{
+    height: 100%;
+    width: auto;
+}
+
+span.tiempo{
+    font-size: 3.7vw;
+}
+
+/* Estilos de caja de Publicación */
+
+div.cajaPublicacion{
+    width: 80%;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border: black solid 1px;
+}
+
+div.titulo{
+    font-size: 6vw;
+}
+
+div.etiquetas{
+    font-size: 3.5vw;
+}
+
+div.mensaje{
+    font-size: 4vw;
+}
+
+p.mensaje{
+    width: 100%;
+}
+
+div.materiales{
+    width: 100%;
+}
+
+div.material{
+    width: 100%;
+    height: 70px;
+    background: #CFD8DC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+figure.material{
+    height: 80%;
+    
+}
+
+img.material{
+    height: 100%;
+}
+
+h3.tituloMaterial{
+    font-size: 3.5vw;
+}
+
+/* Votacion */
+
+div.votacion{
+    width: 100%;
+    height: 21.5px;
+    background: white;
+
+}
+
+/* Caja de comentarios */
+
+div.comentarios{
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 70px;
+    border: black solid 1px;
+}
+
+div.user{
+    height: 40%;
+}
+
+div.fotoUserC{
+    height: 100%;
+}
+
+h2.tituloComentario{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+div.comentario{
+    width: 100%;
+    height: 200px;
+}
+
+div.user{
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+div.informacionUser{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+figure.userC{
+    height: 100%;
+}

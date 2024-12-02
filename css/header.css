@@ -1,0 +1,42 @@
+.header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004E89;
+    color: white;
+    padding: 0px;
+    position: fixed; /* Fija el encabezado */
+    top: 0; /* Lo coloca en la parte superior */
+    left: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+img.logo{
+    width: 50px;
+}
+
+div.cajaN{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+figure{
+    margin: 0px;
+}
+
+span.tituloM{
+    color: white;
+    font-size: 7vw;
+
+}

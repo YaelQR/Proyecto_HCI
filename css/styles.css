@@ -1,0 +1,281 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.5;
+    margin: 0; /* Elimina márgenes no deseados */
+    padding-bottom: 60px; /* Espacio para evitar que el contenido sea tapado por la barra */
+    padding-top: 60px;
+}
+
+/* Header Styles */
+.header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004E89;
+    color: white;
+    padding: 10px 15px;
+    position: fixed; /* Fija el encabezado */
+    top: 0; /* Lo coloca en la parte superior */
+    left: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+img.logo{
+    width: 50px;
+}
+
+div.cajaN{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+
+figure{
+    margin: 0px;
+}
+
+span.tituloM{
+    color: white;
+    font-size: 7vw;
+
+}
+
+img.menu{
+    width: 30px;
+}
+
+/* Post Section */
+.posts {
+    padding: 15px;
+}
+
+.post-button {
+    all: unset; /* Removes default button styles */
+    display: block; /* Makes the button behave like a container */
+    width: 100%; /* Ensures it takes the full width */
+    height: 100%; /* Ensures the button covers the entire area of the article */
+    cursor: pointer; /* Shows pointer cursor on hover */
+}
+
+/* Individual Post */
+.post {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+/* Post Header */
+.compact-section {
+    line-height: 1; /* Reduces line spacing */
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.post-meta {
+    font-size: 12px;
+    color: #777;
+}
+
+.button .post {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Post Content */
+.attachments {
+    margin: 10px 0;
+    padding: 10px; /* Added padding to ensure content isn't too tight to the container edges */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width */
+}
+
+.attachment {
+    display: block; /* Force each link to be on a new line */
+    padding: 8px 12px;
+    margin-bottom: 10px; /* Adds spacing between the links */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+.attachment.pdf {
+    background-color: #e5541a;
+}
+
+.attachment.epub {
+    background-color: #1a7ce5;
+}
+
+.file-icon {
+    float: right; /* Align the icon to the right of the text */
+    width: 20px; /* Adjust the width to fit the icon properly */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 8px; /* Add some space between the text and the icon */
+    vertical-align: middle; /* Align the icon vertically in the middle of the text */
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Post Footer */
+/*
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.post-footer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #1565c0;
+}*/
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.post-footer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #1565c0;
+}
+
+.post-footer .left {
+    display: flex;
+    align-items: center;
+}
+
+.post-footer .left button {
+    margin-right: 4px; /* Small space between the buttons and points */
+}
+
+.post-footer .points {
+    margin-left: 4px; /* Small space between points and the second button */
+}
+
+.post-footer .comments {
+    margin-left: 20px; /* Larger space between the points and the comments */
+}
+
+.post-footer button:hover {
+    color: #003c8f;
+}
+
+/* Utility Classes */
+span {
+    font-weight: bold;
+}
+
+/* BARRA INFERIOR */
+/* Barra inferior fija */
+.button-container {
+    display: flex;
+    position: fixed; /* Fija la barra en la pantalla */
+    bottom: 0; /* La ubica al fondo de la pantalla */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Compensa el desplazamiento de centrar */
+    background-color: #004E89;
+    width: 100%; /* Ajusta el ancho a toda la pantalla */
+    max-width: 100%; /* Limita el ancho máximo */
+    height: 60px; /* Aumenta la altura para más espacio */
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0; /* Bordes redondeados */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+        rgba(27, 133, 219, 0.5) 5px 10px 15px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+/*
+.button-container {
+    display: flex;
+    background-color: rgb(27, 133, 219);
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+      rgba(27, 133, 219, 0.5) 5px 10px 15px;
+  }*/
+
+/* Botones de la barra */
+.button-barra, .button {
+    outline: none;
+    border: none;
+    width: 50px; /* Tamaño uniforme */
+    height: 50px; /* Tamaño uniforme */
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.button-barra:hover, .button:hover {
+    transform: translateY(-3px);
+    background-color: rgba(255, 255, 255, 0.1); /* Efecto visual */
+}
+
+/* Íconos */
+.icon, .icon-barra, svg {
+    width: 24px; /* Ajusta el tamaño uniforme */
+    height: 24px;
+    color: inherit; /* Heredan el color del botón */
+}
